@@ -1,0 +1,93 @@
+/*
+Planning Biblio, Version 2.1
+Licence GNU/GPL (version 2 et au dela)
+Voir les fichiers README.txt et COPYING.txt
+Copyright (C) 2011-2016 - Jérôme Combes
+
+Fichier : css/custom.css
+Création : 20 janvier 2016
+Dernière modification : 22 janvier 2016
+@author Jérôme Combes <jerome@planningbiblio.fr>
+
+Description :
+Feuille de style personnalisée pour SciencesPo
+
+Incluse dans les fichiers include/header.php et setup/header.php
+*/
+
+/*
+ * Red : #EF3340
+ * Grey : #333
+ * White : #FAFAFA
+ */
+
+body{
+  font-family:Arial;
+  background: #FAFAFA;
+}
+
+#logo {
+  margin-left: 3px;
+  margin-top: 5px;
+  width:155px;
+  height:40px;
+  background:url("images/logo180.png") no-repeat right top;
+}
+
+#auth-logo {
+  margin-top:40px;
+  width:200px;
+  height:60px;
+  background:url("images/logo200.png") no-repeat right top;
+}
+
+.td_postes {
+  background: #555;
+  color:#FAFAFA;
+  font-family:Arial;
+  font-weight:bold;
+  min-width: 200px;
+  padding:4px;
+}
+
+.tr_horaires, .tr_horaires .td_postes,.tr_separation{
+  background: #EF3340;
+  color:#FAFAFA;
+  font-family:Arial;
+  font-weight:bold;
+  padding:4px;
+}
+
+body,a,input,select,textarea,button,#auth, #auth input, .menu2, .right,.titreSemFixe{
+  color:#333;
+}
+
+#ferie,.ferie, .menuRed, a:hover.menuRed, a:hover.menu, .important, #messages_infos,.myAccountLink:hover {
+  color: #EF3340;
+}
+
+.cellule_grise,.tr1 {
+  background: #DDD;
+}
+
+td.menu_td:hover,td.menu_td2:hover,.th, td.menu_td a:hover, td.menu_td2 a:hover {
+  color: #EF3340;
+  background: #FAFAFA;
+}
+
+/*	DataTables */
+.dataTable tbody tr.odd {
+  background-color:#DDD;
+}
+
+.dataTable tbody tr.odd td.sorting_1,
+.dataTable tbody tr.odd td.sorting_2,
+.dataTable tbody tr.odd td.sorting_3{
+  background-color:#CCC;
+}
+
+.dataTable tbody tr.even td.sorting_1,
+.dataTable tbody tr.even td.sorting_2,
+.dataTable tbody tr.even td.sorting_3{
+  background-color:#DDD;
+}
