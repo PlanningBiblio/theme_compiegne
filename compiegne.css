@@ -4,9 +4,9 @@ Licence GNU/GPL (version 2 et au dela)
 Voir les fichiers README.txt et COPYING.txt
 Copyright (C) 2011-2016 - Jérôme Combes
 
-Fichier : css/custom.css
+Fichier : themes/compiegne/compiegne.css
 Création : 22 mars 2016
-Dernière modification : 22 mars 2016
+Dernière modification : 24 mars 2016
 @author Jérôme Combes <jerome@planningbiblio.fr>
 
 Description :
@@ -18,30 +18,55 @@ Incluse dans les fichiers include/header.php et setup/header.php
 /*
  * Red : #EF3340
  * Grey : #333
- * White : #FAFAFA
- * bleu pour Saint-Corneille et le cellier : #009dd9 / pâle : #ccecf8 / texte : #0f6fc6
+ * White : #FFFFFF
+ * bleu pour Saint-Corneille et le cellier : #009dd9 / pâle : #ccecf8 / texte : #0f6fc6 
  * rouge pour Mourichon : #644946 / pâle : #ebd5d3 / texte : #d34717
  * jaune pour Bellicart 
+ * général bleu : 2da2bf , abdae6 , d5edf3
+ * général rouge : da1f27
  */
 
 body{
   font-family:Arial;
-  background: #FAFAFA;
+  background: #FFFFFF;
 }
 
 #logo {
   margin-left: 3px;
-  margin-top: 5px;
+  margin-top: 0px;
   width:155px;
-  height:40px;
-  background:url("images/logo180.png") no-repeat right top;
+  height:50px;
+  background:url("images/logoBlack150.png") no-repeat right top;
 }
 
 #auth-logo {
   margin-top:40px;
   width:200px;
-  height:60px;
-  background:url("images/logo200.png") no-repeat right top;
+  height:80px;
+  background:url("images/logoBlack200.png") no-repeat right top;
+}
+
+.navigation, #topgauche{
+  background: #d5edf3;
+    white-space:nowrap;
+
+}
+
+#content-planning{
+  padding: 30px 0 0 0;
+}
+
+.titreSemFixe{
+  padding-top:20px;
+}
+
+#td_boutons{
+  padding-top:15px;
+}
+
+#content, #content-planning{
+  margin-top:12px;
+  background:url("images/anneau.png") repeat-x center top;
 }
 
 .td_postes {
@@ -49,11 +74,11 @@ body{
   font-weight:bold;
   min-width: 200px;
   padding:4px 10px;
+  white-space:nowrap;
 }
 
 .tr_horaires, .tr_horaires .td_postes, .tr_separation, .tr_separation .td_postes{
-  background: #EF3340;
-  color:#FAFAFA;
+  color:#FFFFFF;
   font-family:Arial;
   font-weight:bold;
   padding:0 4px;
@@ -65,29 +90,42 @@ body,a,input,select,textarea,button,#auth, #auth input, .menu2, .right,.titreSem
 }
 
 #ferie,.ferie, .menuRed, a:hover.menuRed, a:hover.menu, .important, #messages_infos,.myAccountLink:hover {
-  color: #EF3340;
+  color: #da1f27;
 }
 
 td.menu_td:hover,td.menu_td2:hover,.th, td.menu_td a:hover, td.menu_td2 a:hover {
-  color: #EF3340;
-  background: #FAFAFA;
+  background: #d5edf3;
+  color: #da1f27;
+}
+
+li.menu_li:hover {
+  background: #d5edf3;
+}
+
+
+td.menu_td{
+  padding-top: 7px;
+}
+
+.menu_table{
+  margin-top: 15px;
 }
 
 /*	DataTables */
 .dataTable tbody tr.odd {
-  background-color:#DDD;
+  background-color:#d5edf3;
 }
 
 .dataTable tbody tr.odd td.sorting_1,
 .dataTable tbody tr.odd td.sorting_2,
 .dataTable tbody tr.odd td.sorting_3{
-  background-color:#CCC;
+  background-color:#abdae6;
 }
 
 .dataTable tbody tr.even td.sorting_1,
 .dataTable tbody tr.even td.sorting_2,
 .dataTable tbody tr.even td.sorting_3{
-  background-color:#DDD;
+  background-color:#d5edf3;
 }
 
 
@@ -95,8 +133,6 @@ td.menu_td:hover,td.menu_td2:hover,.th, td.menu_td a:hover, td.menu_td2 a:hover 
   font-size: 1.1em;
 }
 
-
-/* TEST */
 
 /*
  * bleu pour Saint-Corneille et le cellier : #009dd9 / pâle : #ccecf8 / texte : #0f6fc6
@@ -170,4 +206,3 @@ td.menu_td:hover,td.menu_td2:hover,.th, td.menu_td a:hover, td.menu_td2 a:hover 
 .cellule_grise,.tr1, .animation td.cellule_grise {
   background: #DDD;
 }
-
