@@ -127,6 +127,11 @@ td.menu_td{
   margin-top: 15px;
 }
 
+/* Notes affichées en bas des plannings */
+#pl-notes-div1, .pl-notes-div1{
+  border : 1px solid #2da2bf;
+}
+
 /*	DataTables */
 .dataTable tbody tr.odd {
   background-color:#d5edf3;
