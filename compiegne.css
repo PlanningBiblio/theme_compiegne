@@ -6,7 +6,7 @@ Copyright (C) 2011-2016 - Jérôme Combes
 
 Fichier : themes/compiegne/compiegne.css
 Création : 22 mars 2016
-Dernière modification : 25 mars 2016
+Dernière modification : 5 avril 2016
 @author Jérôme Combes <jerome@planningbiblio.fr>
 
 Description :
@@ -21,6 +21,9 @@ Incluse dans les fichiers include/header.php et setup/header.php
  * White : #FFFFFF
  * bleu pour Saint-Corneille et le cellier : #009dd9 / pâle : #ccecf8 / texte : #0f6fc6 
  * rouge pour Mourichon : #644946 / pâle : #ebd5d3 / texte : #d34717
+ * version 2 : rouge mourichon c1322a
+ * jaune pour Bellicart : #d7af0d / pâle : #efe0a3 / texte : 
+ * version 2 : jaune Bellicart : d7c942 / 
  * jaune pour Bellicart 
  * général bleu : 2da2bf , abdae6 , d5edf3
  * général rouge : da1f27
@@ -158,7 +161,7 @@ td.menu_td{
 /*
  * bleu pour Saint-Corneille et le cellier : #009dd9 / pâle : #ccecf8 / texte : #0f6fc6
  * rouge pour Mourichon : #644946 / pâle : #ebd5d3 / texte : #d34717
- * jaune pour Bellicart : #d7af0d / pâle : #efe0a3 / texte : 
+ * jaune pour Bellicart : #d7c942 / pâle : #efe0a3 / texte : 
  */
 
 /* Style en fonction de la classe "poste" des activités */
@@ -178,14 +181,14 @@ td.menu_td{
 
 .bellicart.animation td{
   background: #efead7; 
-  border-top: outset 1px #d7af0d;
-  border-bottom: outset 1px #d7af0d;
+  border-top: outset 1px #d7c942;
+  border-bottom: outset 1px #d7c942;
 }
 
 .mourichon.animation td{
-  background: #ebdddc;
-  border-top: outset 1px #644946;
-  border-bottom: outset 1px #644946;
+  background: #f8dbda;
+  border-top: outset 1px #c1322a;
+  border-bottom: outset 1px #c1322a;
 }
 
 /* Style en fonction des classes des tableaux (une classe par bibliothèque ) */
@@ -215,7 +218,7 @@ td.td_obligatoire a, td.td_renfort a{
 
 /* Bellicart */
 .bellicart.tr_horaires, .bellicart.tr_separation, .bellicart.tr_horaires td.td_postes{
-  background: #d7af0d;
+  background: #d7c942;
   color: #000;
 }
 
@@ -226,12 +229,12 @@ td.td_obligatoire a, td.td_renfort a{
 
 /* Mourichon */
 .mourichon.tr_horaires, .mourichon.tr_separation, .mourichon.tr_horaires td.td_postes{
-  background: #644946;
+  background: #c1322a;
   color: #FFF;
 }
 
 .mourichon td.td_postes{
-  background: #EBD5D3; 
+  background: #eacac9; 
   color: #000;
 }
 
