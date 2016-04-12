@@ -6,7 +6,7 @@ Copyright (C) 2011-2016 - Jérôme Combes
 
 Fichier : themes/compiegne/compiegne.css
 Création : 22 mars 2016
-Dernière modification : 5 avril 2016
+Dernière modification : 12 avril 2016
 @author Jérôme Combes <jerome@planningbiblio.fr>
 
 Description :
@@ -163,6 +163,10 @@ td.menu_td{
  * rouge pour Mourichon : #644946 / pâle : #ebd5d3 / texte : #d34717
  * jaune pour Bellicart : #d7c942 / pâle : #efe0a3 / texte : 
  */
+
+.cellSpan{
+  font-weight:bold;
+}
 
 /* Style en fonction de la classe "poste" des activités */
 .animation td{
