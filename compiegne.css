@@ -1,12 +1,12 @@
 /*
-Planning Biblio, Version 2.3
+Planning Biblio, Version 2.5
 Licence GNU/GPL (version 2 et au dela)
 Voir les fichiers README.txt et COPYING.txt
 Copyright (C) 2011-2016 - Jérôme Combes
 
 Fichier : themes/compiegne/compiegne.css
 Création : 22 mars 2016
-Dernière modification : 12 avril 2016
+Dernière modification : 10 novembre 2016
 @author Jérôme Combes <jerome@planningbiblio.fr>
 
 Description :
@@ -169,27 +169,27 @@ td.menu_td{
 }
 
 /* Style en fonction de la classe "poste" des activités */
-.animation td{
+.tr_activite_animation td{
   font-weight: bold;
 }
 
-.animation td.td_postes{
+.tr_activite_animation td.td_postes{
   font-size: 1.6em;
 }
 
-.corneille.animation td{
+.corneille.tr_activite_animation td{
   background: #daf0f8;
   border-top: outset 1px #009dd9;
   border-bottom: outset 1px #009dd9;
 }
 
-.bellicart.animation td{
+.bellicart.tr_activite_animation td{
   background: #efead7; 
   border-top: outset 1px #d7c942;
   border-bottom: outset 1px #d7c942;
 }
 
-.mourichon.animation td{
+.mourichon.tr_activite_animation td{
   background: #f8dbda;
   border-top: outset 1px #c1322a;
   border-bottom: outset 1px #c1322a;
@@ -247,6 +247,6 @@ td.td_obligatoire a, td.td_renfort a{
   height:20px; 
 }
 
-.cellule_grise,.tr1, .animation td.cellule_grise {
+.cellule_grise,.tr1, .tr_activite_animation td.cellule_grise {
   background: #DDD;
 }
